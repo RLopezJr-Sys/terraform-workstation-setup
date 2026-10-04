@@ -28,3 +28,16 @@ Command: winget upgrade --id Hashicorp.Terraform   Friction Point & Resolution (
 
 Analysis: While upstream maintainers publish point releases rapidly, community or official package registries often experience synchronization delays before their manifests reflect the newest version.Decision: Proceeded with the stable local baseline (v1.16.4), as core syntax, provider interactions, and local testing capabilities remain fully functional.
 <img width="1468" height="440" alt="trying to upgrade" src="https://github.com/user-attachments/assets/fafbba79-c430-46de-a5f5-d3c7ae920f9c" />
+
+### Package Maintenance & Upgrades (`winget`)
+Managing a local workstation requires keeping tools current. Using the Windows Package Manager (`winget`), you can manage application lifecycles either granularly or in bulk:
+
+* **Upgrade a Specific Program:**
+  To target and upgrade an individual tool without affecting the rest of the system:
+  powershell
+  winget upgrade --id
+Example: winget upgrade --id Hashicorp.Terraform
+
+Upgrade Everything System-Wide:
+To automate checking and upgrading all installed packages managed by winget in a single workflow
+Example: winget upgrade --all
