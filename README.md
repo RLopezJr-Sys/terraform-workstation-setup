@@ -3,7 +3,7 @@ Foundational Terraform workstation setup, package management, and path configura
 
 # Terraform Workstation Setup (`terraform-workstation-setup`)
 
-## 📌 Project Overview
+## Project Overview
 This repository documents the foundational bootstrap process for establishing a local Infrastructure-as-Code (IaC) workstation on **Windows 10/11** using **PowerShell**, **`winget`**, and **HashiCorp Terraform**. 
 
 To build genuine technical mastery, all commands were executed manually via the command line, and real-world operational friction points were logged and resolved rather than bypassed.
